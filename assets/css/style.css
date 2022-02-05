@@ -3,55 +3,249 @@
     padding: 0;
 }
 
-#mainContainer{
+
+#main{
+    margin-top: -80px;
     display: flex;
-    justify-content: center;
-    margin-top: 100px;
-    height: auto;
-    width: 100%;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: column; 
+    align-items: center; 
+}
+
+#mainContainer{
+    margin-top: 10px;
+    display: none;
+}
+
+#arrowDiv{
     
+    position: relative;
+    top: 100px;
+    left: -244px;
+
 }
 
-#AddDiv{
 
-}
-
-input{
-    width: 600px;
-    height: 50px;
-    padding-left: 12px;
-    font-size: 18px;
-    border-radius: 3px;
+#postDiv{
+    height: 600px;
+    width: 550px;
     border: 1px solid grey;
+
+}
+
+
+#appearingDiv{
+    position: relative;
+    left: 341px;
+    bottom: -44px;
+}
+
+.but{
+    height: 30px;
+    width: 100px;
+    border: 1px solid grey;
+    font-size: 13px;
+    border-radius: 5px;
     
+}
+
+.but:hover{
+    border: 1px solid rgb(91, 157, 243);
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+#AddInput{
+    width: 449px;
+    padding-left: 12px;
+    font-size: 15px;
+    border-radius: 10px;
+    border: 1px solid grey;
+    padding-top: 5px;
+    height: 26px;
+    max
+}
+
+#AddInput:hover{
+    border: 1px solid rgb(91, 157, 243);
 }
 
 #AddButton{
-    height: 54px;
+    height: 33px;
     width: 90px;
     border-radius: 10px;
     color: blue;
     border: 1px solid grey;
-
-
+    font-size: 15px;
+    position: relative;
+    top: -11px;
 }
 
 
-.AddDiv{
+#AddButton:hover{
+    opacity: 0.8;
+    border: 1px solid rgb(91, 157, 243);
+    cursor: pointer;
     
-    height: 80px;
-    width: 685px;
+}
+
+.AddDiv{
+    min-height: 50px;
+    width: 535px;
     margin: 5px 0;
     padding: 0 0 0 20px;
-    font-size: 25px;
+    font-size: 18px;
+    font-family: initial;
     border-radius: 5px;
+    border: 1px solid grey;
+    overflow: hidden;
+    word-wrap: break-word;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    
+  
+}
+
+.AddDiv:hover{
+    border: 1px solid rgb(91, 157, 243);
+}
+
+
+
+.deleteButton{
+    height: 25px;
+    width: 60px;
+    border-radius: 5px;
+    color: blue;
+    font-size: 15px;
+    border: 1px solid grey;
+    position: relative;
+    left: 56px;
+    bottom: -25px;
+}
+
+.deleteButton:hover{
+    border: 1px solid rgb(91, 157, 243);
+    cursor: pointer;
+}
+
+.deleteButton:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+
+.h4{
+    margin-left: -9px;
+    color: black;
+    padding-top: 5px;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+#postDiv{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+i{
+    color: grey;
+}
+
+i:hover{
+    cursor: pointer;
+}
+
+
+.replyButton{
+    height: 25px;
+    width: 60px;
+    margin-bottom: 5px;
+    margin-left: -10px;
+    border-radius: 5px;
+    color: blue;
+    font-size: 15px;
     border: 1px solid grey;
 }
 
-.deletButton{
-    height: 100px;
-    width: 100px;
+.replyButton:hover{
+    border: 1px solid rgb(91, 157, 243);
+    cursor: pointer;
+}
 
+
+
+
+.textArea{
+    height: 20px;
+    padding-left: 12px;
+    font-size: 15px;
+    border-radius: 10px;
+    border: 1px solid grey;
+    padding-top: 5px;
+    height: 26px;
+}
+
+.textArea:hover{
+    border: 1px solid rgb(91, 157, 243);
+}
+
+.replyDiv{
+    position: relative;
+    left: 131px;
+    top: -31px;
+}
+
+
+.deleteReplyCommentButton{
+    position: relative;
+    left: 280px;
+    top: -6px;
+    margin-bottom: 5px;
+    margin-left: -10px;
+    border-radius: 5px;
+    color: blue;
+    font-size: 15px;
+    border: 1px solid grey;
+    
+}
+
+
+.addReplyCommentButton{
+    position: relative;
+    top: -6px;
+    margin-bottom: 5px;
+    margin-left: -10px;
+    border-radius: 5px;
+    color: blue;
+    font-size: 15px;
+    border: 1px solid grey;
+    left: 10px;
+    width: 35px;
+
+}
+
+.addReplyCommentButton:hover{
+    border: 1px solid rgb(91, 157, 243);
+}
+
+
+.replyCommentDiv{
+    position: relative;
+    bottom: 30px;
+    left: 331px;
+    word-wrap: break-word;
+    text-align: start;
+    overflow: hidden;
+    width: 180px;
+    min-height: 30px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    font-size: 14px;
+    padding: 5px;
+}
+
+.replyCommentDiv:hover{
+    border: 1px solid rgb(91, 157, 243);
 }
