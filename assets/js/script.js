@@ -1,17 +1,5 @@
 
-
-
-
-
-
-
-
-
-
-
 const posts = document.getElementsByClassName("post");
-
-
 
 for (const post of posts) {
 const addButton = post.getElementsByClassName("AddButton")[0];
@@ -20,8 +8,6 @@ const addCommentDiv = post.getElementsByClassName("addCommentDiv")[0];
 const deleteCommentDiv = post.getElementsByClassName("deleteCommentDiv")[0];
 const bal = post.getElementsByClassName("bal")[0];
 
-
-
 addCommentDiv.addEventListener("click",function(){
     mainContainer.style.display = "block";
 })
@@ -29,8 +15,6 @@ addCommentDiv.addEventListener("click",function(){
 deleteCommentDiv.addEventListener("click",function(){
     mainContainer.style.display = "none";
 })
-
-
 
 addButton.addEventListener("click",function(evt) {
     evt.preventDefault();
@@ -43,7 +27,6 @@ addButton.addEventListener("click",function(evt) {
     }
     
 });
-
 
 function addCommentFunc (value,textArea1) {
    
@@ -61,12 +44,10 @@ function addCommentFunc (value,textArea1) {
     deleteButton.className = "deleteButton";
     addDiv.appendChild(deleteButton);
 
-
     const replyButton = document.createElement("button");
     replyButton.innerHTML = "Reply";
     replyButton.className = "replyButton ";
     addDiv.appendChild(replyButton); 
-
     textArea1.value = "";
 
     deleteButton.addEventListener("click",function(evt) {
@@ -109,13 +90,10 @@ function addCommentFunc (value,textArea1) {
                 replyCommentDiv.innerText = textAreaValue;
                 addDiv.appendChild(replyCommentDiv);
                 textArea.value = "";
-
                 deleteReplyCommentButton.addEventListener("click",function(evt){
                     evt.preventDefault()
                     replyCommentDiv.parentElement.removeChild(replyCommentDiv);  
                 })
         }});
-        
     }})
-    
 }};

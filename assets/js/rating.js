@@ -20,8 +20,6 @@ function updateRating (post,id) {
             arrowDown.style.color = "grey";
         }
     }
-
-    
 }
 
 for (const post of posts) {
