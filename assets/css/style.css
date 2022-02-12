@@ -3,39 +3,89 @@
     padding: 0;
 }
 
-
 #main{
-    margin-top: -80px;
+   background-image: url(/assets/images/background.jpg);
+   background-attachment: fixed;
+   background-repeat: no-repeat;
+   max-width: 100%;
+   height: auto;
+   background-position: 10% 0%;
+   background-size: cover;
+} 
+
+#firstTitle{
+    position: relative;
+    top: 58px;
+    left: 400px;
+    display: inline;
+    color: black;
+}
+
+
+.postDiv img{
+    height: 470px;
+    width: 420px;  
+    position: relative; 
+    left: 12%; 
+    top: 8px;
+}
+
+h2{
+    position: relative; 
+    left: -90px;
+    top: 132px;
+    opacity: 0.8;
+}
+
+#firstTitle:hover{
+    opacity: 0.8;
+}
+
+.post{
     display: flex;
     flex-direction: column; 
     align-items: center; 
 }
 
-#mainContainer{
+.mainContainer{
     margin-top: 10px;
     display: none;
 }
 
-#arrowDiv{
-    
+.arrowDiv{
     position: relative;
-    top: 100px;
+    top: 150px;
     left: -244px;
-
+    text-align: center;
+    z-index: 2;
 }
 
+.bal{
+    margin-left: 6px;
+    font-size: 20px; 
+    font-weight: 900;
+    text-align: center;
+}
 
-#postDiv{
+.postDiv{
     height: 600px;
     width: 550px;
     border: 1px solid grey;
-
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 6px;
+    background-color: #cac9f3;
 }
 
+.postDiv:hover{
+    border: 1px solid rgb(91, 157, 243);
+    
+}
 
-#appearingDiv{
+.appearingDiv{
     position: relative;
-    left: 341px;
+    left: 332px;
     bottom: -44px;
 }
 
@@ -43,9 +93,10 @@
     height: 30px;
     width: 100px;
     border: 1px solid grey;
-    font-size: 13px;
-    border-radius: 5px;
-    
+    font-size: 14px;
+    border-radius: 6px;
+    color: white;
+    background-color: #2196F3;
 }
 
 .but:hover{
@@ -54,34 +105,33 @@
     opacity: 0.9;
 }
 
-#AddInput{
-    width: 449px;
+.AddInput{
+    width: 450px;
     padding-left: 12px;
-    font-size: 15px;
-    border-radius: 10px;
+    font-size: 14px;
+    border-radius: 6px;
     border: 1px solid grey;
-    padding-top: 5px;
-    height: 26px;
-    max
+    padding-top: 6px;
+    height: 26px;  
 }
 
-#AddInput:hover{
+.AddInput:hover{
     border: 1px solid rgb(91, 157, 243);
 }
 
-#AddButton{
-    height: 33px;
+.AddButton{
+    height: 34px;
     width: 90px;
-    border-radius: 10px;
-    color: blue;
+    border-radius: 6px;
+    color: white;
+    background-color: #2196F3;
     border: 1px solid grey;
-    font-size: 15px;
+    font-size: 14px;
     position: relative;
-    top: -11px;
+    top: -12px;
 }
 
-
-#AddButton:hover{
+.AddButton:hover{
     opacity: 0.8;
     border: 1px solid rgb(91, 157, 243);
     cursor: pointer;
@@ -90,63 +140,138 @@
 
 .AddDiv{
     min-height: 50px;
-    width: 535px;
-    margin: 5px 0;
+    width: 536px;
+    margin: 6px 0;
     padding: 0 0 0 20px;
     font-size: 18px;
     font-family: initial;
-    border-radius: 5px;
+    border-radius: 6px;
     border: 1px solid grey;
     overflow: hidden;
     word-wrap: break-word;
     display: flex;
     flex-direction: column;
     text-align: start;
-    
-  
+    background-color: #cac9f3;
+}
+
+.replyButton{
+    height: 26px;
+    width: 60px;
+    margin-bottom: 6px;
+    margin-left: -10px;
+    border-radius: 6px;
+    color: white;
+    font-size: 14px;
+    border: 1px solid grey;
+    background-color: #2196F3;
+}
+
+.replyButton:hover{
+    border: 1px solid rgb(91, 157, 243);
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.deleteButton{
+    height: 25px;
+    width: 60px;
+    border-radius: 6px;
+    color: white;
+    font-size: 14px;
+    border: 1px solid grey;
+    position: relative;
+    left: 56px;
+    bottom: -26px;
+    background-color: #2196F3;
+}
+
+.deleteButton:hover{
+    border: 1px solid rgb(91, 157, 243);
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.replyDiv{
+    display: flex;
+    justify-content: end;
+    margin-top: -32px;
+    margin-bottom: 6px;
+    margin-right: 4px;
+}
+
+.textArea{
+    height: 20px;
+    padding-left: 12px;
+    font-size: 14px;
+    border-radius: 6px;
+    border: 1px solid grey;
+    padding-top: 6px; 
+}
+
+.textArea:hover{
+    border: 1px solid rgb(91, 157, 243);
+}
+
+ .addReplyCommentButton{ 
+    border-radius: 6px;
+    color: white;
+    font-size: 15px;
+    border: 1px solid grey;
+    left: 10px;
+    width: 36px;
+    margin-left: 4px;
+    background-color: #2196F3;
+}
+
+.addReplyCommentButton:hover{
+    border: 1px solid rgb(91, 157, 243);
+    opacity: 0.8;
+    cursor: pointer;
+} 
+
+.deleteReplyCommentButton{
+    border-radius: 6px;
+    color: white;
+    background-color: #2196F3;
+    font-size: 14px;
+    border: 1px solid grey;
+    margin-left: 4px;
+}
+
+.deleteReplyCommentButton:hover{
+    border: 1px solid rgb(91, 157, 243);
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.replyCommentDiv{
+    word-wrap: break-word;
+    text-align: start;
+    overflow: hidden;
+    width: 180px;
+    min-height: 30px;
+    border: 1px solid grey;
+    border-radius: 6px;
+    font-size: 14px;
+    padding: 6px;
+    margin-left: 338px;
+    margin-bottom: 6px; 
+}
+
+.replyCommentDiv:hover{
+    border: 1px solid rgb(91, 157, 243);
 }
 
 .AddDiv:hover{
     border: 1px solid rgb(91, 157, 243);
 }
 
-
-
-.deleteButton{
-    height: 25px;
-    width: 60px;
-    border-radius: 5px;
-    color: blue;
-    font-size: 15px;
-    border: 1px solid grey;
-    position: relative;
-    left: 56px;
-    bottom: -25px;
-}
-
-.deleteButton:hover{
-    border: 1px solid rgb(91, 157, 243);
-    cursor: pointer;
-}
-
-.deleteButton:hover{
-    opacity: 0.8;
-    cursor: pointer;
-}
-
-
 .h4{
-    margin-left: -9px;
+    margin-left: -10px;
     color: black;
-    padding-top: 5px;
+    padding-top: 6px;
     font-family: 'Raleway', sans-serif;
-}
-
-
-#postDiv{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
 }
 
 i{
@@ -155,97 +280,23 @@ i{
 
 i:hover{
     cursor: pointer;
-}
-
-
-.replyButton{
-    height: 25px;
-    width: 60px;
-    margin-bottom: 5px;
-    margin-left: -10px;
-    border-radius: 5px;
-    color: blue;
-    font-size: 15px;
-    border: 1px solid grey;
-}
-
-.replyButton:hover{
-    border: 1px solid rgb(91, 157, 243);
-    cursor: pointer;
-}
-
-
-
-
-.textArea{
-    height: 20px;
-    padding-left: 12px;
-    font-size: 15px;
-    border-radius: 10px;
-    border: 1px solid grey;
-    padding-top: 5px;
-    height: 26px;
-}
-
-.textArea:hover{
-    border: 1px solid rgb(91, 157, 243);
-}
-
-.replyDiv{
-    position: relative;
-    left: 131px;
-    top: -31px;
-}
-
-
-.deleteReplyCommentButton{
-    position: relative;
-    left: 280px;
-    top: -6px;
-    margin-bottom: 5px;
-    margin-left: -10px;
-    border-radius: 5px;
-    color: blue;
-    font-size: 15px;
-    border: 1px solid grey;
-    
-}
-
-
-.addReplyCommentButton{
-    position: relative;
-    top: -6px;
-    margin-bottom: 5px;
-    margin-left: -10px;
-    border-radius: 5px;
-    color: blue;
-    font-size: 15px;
-    border: 1px solid grey;
-    left: 10px;
-    width: 35px;
 
 }
 
-.addReplyCommentButton:hover{
-    border: 1px solid rgb(91, 157, 243);
-}
 
 
-.replyCommentDiv{
-    position: relative;
-    bottom: 30px;
-    left: 331px;
-    word-wrap: break-word;
-    text-align: start;
-    overflow: hidden;
-    width: 180px;
-    min-height: 30px;
-    border: 1px solid grey;
-    border-radius: 5px;
-    font-size: 14px;
-    padding: 5px;
-}
 
-.replyCommentDiv:hover{
-    border: 1px solid rgb(91, 157, 243);
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

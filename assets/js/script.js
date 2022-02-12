@@ -1,11 +1,12 @@
-const addInput = document.getElementById("AddInput");
-const addButton = document.getElementById("AddButton");
-const mainContainer = document.getElementById("mainContainer")
-const addCommentDiv = document.getElementById("addCommentDiv")
-const deleteCommentDiv = document.getElementById("deleteCommentDiv");
-const bal = document.getElementById("bal");
-let addInputValue = "";
 
+const posts = document.getElementsByClassName("post");
+
+for (const post of posts) {
+const addButton = post.getElementsByClassName("AddButton")[0];
+const mainContainer = post.getElementsByClassName("mainContainer")[0];
+const addCommentDiv = post.getElementsByClassName("addCommentDiv")[0];
+const deleteCommentDiv = post.getElementsByClassName("deleteCommentDiv")[0];
+const bal = post.getElementsByClassName("bal")[0];
 
 addCommentDiv.addEventListener("click",function(){
     mainContainer.style.display = "block";
@@ -15,58 +16,42 @@ deleteCommentDiv.addEventListener("click",function(){
     mainContainer.style.display = "none";
 })
 
-addInput.addEventListener("keyup",function (evt) {
-    addInputValue = evt.target.value;
-    addInputValue.length < 10; 
-    return addInputValue;   
-});
-
-addInput.addEventListener("click",function (evt) {
-    evt.stopPropagation()
-    addInput.placeholder = addInput.placeholder === "Comment"?"Please write your comment ...":"Comment";
-})
-
-mainContainer.addEventListener("click",function(evt){
-    addInput.placeholder = "Comment";
-})
-
 addButton.addEventListener("click",function(evt) {
-    evt.preventDefault()
+    evt.preventDefault();
+    const textArea1 = evt.target.previousElementSibling;
+    const comment = textArea1.value;
 
-    if(addInput.value !== ""){
-        addCommentFunc();
+    
+    if(comment !== ""){
+        addCommentFunc(comment,textArea1);
     }
     
 });
 
-
-function addCommentFunc () {
+function addCommentFunc (value,textArea1) {
    
     const addDiv = document.createElement("div");
     addDiv.className = "AddDiv";
     
-    document.getElementById("mainContainer").appendChild(addDiv);
-    addInputValue.value = "";
+    post.getElementsByClassName("mainContainer")[0].appendChild(addDiv);
     const addText = document.createElement("h4");
     addText.className = "h4";
     addDiv.appendChild(addText);
-    addText.innerHTML = addInputValue;
+    addText.innerHTML = value;
 
     const deleteButton = document.createElement("button");
     deleteButton.innerHTML = "Delete";
     deleteButton.className = "deleteButton";
     addDiv.appendChild(deleteButton);
 
-
     const replyButton = document.createElement("button");
     replyButton.innerHTML = "Reply";
-    replyButton.className = "replyButton";
+    replyButton.className = "replyButton ";
     addDiv.appendChild(replyButton); 
-
-    addInput.value = "";
+    textArea1.value = "";
 
     deleteButton.addEventListener("click",function(evt) {
-        document.getElementById("mainContainer").removeChild(addDiv);
+        post.getElementsByClassName("mainContainer")[0].removeChild(addDiv);
     })
     let f = 0;
     replyButton.addEventListener("click",function(){
@@ -84,9 +69,9 @@ function addCommentFunc () {
         const deleteReplyCommentButton = document.createElement("button");
         deleteReplyCommentButton.innerText = "Delete";
         deleteReplyCommentButton.className = "deleteReplyCommentButton";
-        replyDiv.appendChild(deleteReplyCommentButton);
         addDiv.appendChild(replyDiv);
         replyDiv.appendChild(textArea);
+        replyDiv.appendChild(deleteReplyCommentButton);
         replyDiv.appendChild(addReplyCommentButton);
         textArea.placeholder = "Reply Comment";
         let textAreaValue = "";
@@ -105,36 +90,10 @@ function addCommentFunc () {
                 replyCommentDiv.innerText = textAreaValue;
                 addDiv.appendChild(replyCommentDiv);
                 textArea.value = "";
-
                 deleteReplyCommentButton.addEventListener("click",function(evt){
                     evt.preventDefault()
                     replyCommentDiv.parentElement.removeChild(replyCommentDiv);  
                 })
         }});
-        
     }})
-    
-}
-
-let a = 5;
-let span = document.createElement("span");
-span.innerHTML = `${a}`;
-bal.appendChild(span);
-
-const arrowUp = document.getElementById("arrowUp");
-const arrowDown = document.getElementById("arrowDown");
-arrowUp.addEventListener("click",function(){
-    if(a < 10 && a >= 0){
-        a++;
-        span.innerHTML = `${a}`;
-        }
-})
-
-arrowDown.addEventListener("click",function(){
-    if(a<= 10 && a> 0){
-    a--;
-    span.innerHTML = `${a}`;
-    }
-})
-
-
+}};

@@ -10,36 +10,107 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
         </style>
-
     <title>Martiros Saryan</title>
 </head>
 <body>
     <div id="main">
-        <h2 style="position: relative; left: -126px;top: 127px; opacity: 0.8;">Martiros Saryan</h2>
-        <div id="arrowDiv">
-            <i  id="arrowUp" class="fas fa-arrow-up fa-2x"></i> </br>
-            <p id="bal" style="margin-left: 5px; font-size: 20px; font-weight: 900; text-align: center;"></p>
-            <i id="arrowDown" class="fas fa-arrow-down fa-2x"></i>
+    <h1 id="firstTitle">Most Famous Paintings of All Time in the Art History</h1>
+    <div id="post1" class="post">
+        <h2>Martiros Saryan</h2>
+        <div class="arrowDiv">
+            <i  class="fas fa-arrow-up fa-2x arrowUp" ></i> </br>
+            <p class="bal">9</p>
+            <i  class="fas fa-arrow-down fa-2x arrowDown"></i>
         </div>
-        <div id="postDiv">
-            <img src="/assets/images/Saryan.jpg" style="height: 470px; width: 420px;   position: relative; left: 12%; top: 8px;" alt="">
-            <div id="appearingDiv">
-                <button class="but" id="deleteCommentDiv">Close comment</button>
-                <button class="but" id="addCommentDiv">Add Comment</button>
-                
+        <div class="postDiv">
+            <img src="/assets/images/Saryan.jpg"  alt="">
+            <div class="appearingDiv">
+                <button  class="deleteCommentDiv but mui-btn mui-btn--small mui-btn--primary">Close </button>
+                <button  class="addCommentDiv but mui-btn mui-btn--small mui-btn--primary">Comment  </button>
             </div>
         </div>
-        <div id="mainContainer">
-        <div id="AddDiv">
-
-            <form action="">
-                    <textarea id="AddInput" type="text" maxlength="150"  placeholder="Comment"></textarea>
-                    <button id="AddButton">Add</button>
-                    
+        <div class="mainContainer">
+        <div class="AddDiv1">
+            <form class="mui-form">
+                    <textarea class="AddInput" type="text" maxlength="150"  placeholder="Comment" onfocus="this.placeholder = 'Please write your comment...'" onblur="this.placeholder = 'Comment'" ></textarea>
+                    <button class="AddButton mui-btn mui-btn--primary">Add</button>
             </form>
         </div>
         </div>
     </div>
+    <div id="post2" class="post">
+        <h2>Pablo Ruiz Picasso</h2>
+        <div class="arrowDiv">
+            <i  class="fas fa-arrow-up fa-2x arrowUp" ></i> </br>
+            <p class="bal">31</p>
+            <i  class="fas fa-arrow-down fa-2x arrowDown" ></i>
+        </div>
+        <div class="postDiv">
+            <img src="/assets/images/Pablo.jfif" alt="">
+            <div class="appearingDiv">
+                <button  class="deleteCommentDiv but mui-btn mui-btn--small mui-btn--primary">Close </button>
+                <button  class="addCommentDiv but mui-btn mui-btn--small mui-btn--primary">Comment  </button>
+            </div>
+        </div>
+        <div class="mainContainer">
+        <div class="AddDiv1">
+            <form class="mui-form">
+                    <textarea class="AddInput" type="text" maxlength="150"  placeholder="Comment" onfocus="this.placeholder = 'Please write your comment...'" onblur="this.placeholder = 'Comment'" ></textarea>
+                    <button class="AddButton mui-btn mui-btn--primary">Add</button>
+            </form>
+        </div>
+        </div>
+    </div>
+    <div id="post3" class="post">
+        <h2>Hovhannes Aivazovski</h2>
+        <div class="arrowDiv">
+            <i  class="fas fa-arrow-up fa-2x arrowUp"></i> </br>
+            <p class="bal" style="margin-left: 5px; font-size: 20px; font-weight: 900; text-align: center;">24</p>
+            <i  class="fas fa-arrow-down fa-2x arrowDown"></i>
+        </div>
+        <div class="postDiv">
+            <img src="/assets/images/Ayvazovski.jpg" alt="">
+            <div class="appearingDiv">
+                <button  class="deleteCommentDiv but mui-btn mui-btn--small mui-btn--primary">Close </button>
+                <button  class="addCommentDiv but mui-btn mui-btn--small mui-btn--primary">Comment  </button>
+            </div>
+        </div>
+        <div class="mainContainer">
+        <div class="AddDiv1">
+
+            <form class="mui-form">
+                    <textarea class="AddInput" type="text" maxlength="150"  placeholder="Comment" onfocus="this.placeholder = 'Please write your comment...'" onblur="this.placeholder = 'Comment'" ></textarea>
+                    <button class="AddButton mui-btn mui-btn--primary">Add</button>
+            </form>
+        </div>
+        </div>
+    </div>
+    <div id="post4" class="post">
+        <h2>Leonardo da Vinci</h2>
+        <div class="arrowDiv">
+            <i  class="fas fa-arrow-up fa-2x arrowUp"></i> </br>
+            <p class="bal" style="margin-left: 5px; font-size: 20px; font-weight: 900; text-align: center;">45</p>
+            <i  class="fas fa-arrow-down fa-2x arrowDown"></i>
+        </div>
+        <div class="postDiv">
+            <img src="/assets/images/Monaliza.jpg" alt="">
+            <div class="appearingDiv">
+                <button  class="deleteCommentDiv but mui-btn mui-btn--small mui-btn--primary">Close </button>
+                <button  class="addCommentDiv but mui-btn mui-btn--small mui-btn--primary">Comment  </button>
+            </div>
+        </div>
+        <div class="mainContainer">
+        <div class="AddDiv1">
+
+            <form class="mui-form">
+                    <textarea class="AddInput" type="text" maxlength="150"  placeholder="Comment" onfocus="this.placeholder = 'Please write your comment...'" onblur="this.placeholder = 'Comment'" ></textarea>
+                    <button class="AddButton mui-btn mui-btn--primary">Add</button>
+            </form>
+        </div>
+        </div>
+    </div>
+</div>
     <script src="/assets/js/script.js"></script>
+    <script src="/assets/js/rating.js"></script>
 </body>
 </html>
