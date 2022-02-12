@@ -57,6 +57,5 @@ for (const post of posts) {
         }
         updateRating(post,id);
     })
-
 }
 

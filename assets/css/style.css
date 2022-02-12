@@ -80,7 +80,6 @@ h2{
 
 .postDiv:hover{
     border: 1px solid rgb(91, 157, 243);
-    
 }
 
 .appearingDiv{
@@ -135,7 +134,6 @@ h2{
     opacity: 0.8;
     border: 1px solid rgb(91, 157, 243);
     cursor: pointer;
-    
 }
 
 .AddDiv{
