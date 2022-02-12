@@ -14,19 +14,19 @@
 } 
 
 #titleDiv{
-    width: 800px;
-    background-color: red;
+    width: 60%;
     text-align: center;
-    position: relative;
+    margin: 0 auto;
+    padding-top: 5rem;
+    
+
 }
 
-/* #firstTitle{
-    position: relative;
-    top: 58px;
-    left: 400px;
-    display: inline;
+#firstTitle{
+    
     color: black;
-} */
+    background-color: #cac9f3;
+} 
 
 
 .postDiv img{
@@ -41,10 +41,6 @@ h2{
     position: relative; 
     left: -90px;
     top: 132px;
-    opacity: 0.8;
-}
-
-#firstTitle:hover{
     opacity: 0.8;
 }
 
