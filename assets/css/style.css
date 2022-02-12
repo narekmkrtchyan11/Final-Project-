@@ -13,13 +13,20 @@
    background-size: cover;
 } 
 
-#firstTitle{
+#titleDiv{
+    width: 800px;
+    background-color: red;
+    text-align: center;
+    position: relative;
+}
+
+/* #firstTitle{
     position: relative;
     top: 58px;
     left: 400px;
     display: inline;
     color: black;
-}
+} */
 
 
 .postDiv img{
