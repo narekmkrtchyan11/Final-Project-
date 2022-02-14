@@ -4,7 +4,7 @@
 }
 
 #main{
-   background-image: url(/assets/images/background.jpg);
+   background-image: url(/assets/images/background\ image.jpg);
    background-attachment: fixed;
    background-repeat: no-repeat;
    max-width: 100%;
@@ -13,9 +13,21 @@
    background-size: cover;
 } 
 
+.AddInput{
+    resize: none;
+}
+
 #titleDiv{
     width: 60%;
     text-align: center;
+
+    position: relative;
+    top: 58px;
+    left: 380px;
+    border-radius: 5px;
+    background-color: #cac9f3;
+}
+
     margin: 0 auto;
     padding-top: 5rem;
     
@@ -27,6 +39,7 @@
     color: black;
     background-color: #cac9f3;
 } 
+
 
 
 .postDiv img{
@@ -207,7 +220,8 @@ h2{
     font-size: 14px;
     border-radius: 6px;
     border: 1px solid grey;
-    padding-top: 6px; 
+    padding-top: 6px;
+    resize: none; 
 }
 
 .textArea:hover{
@@ -283,21 +297,4 @@ i:hover{
     cursor: pointer;
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
