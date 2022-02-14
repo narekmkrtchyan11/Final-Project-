@@ -4,7 +4,7 @@
 }
 
 #main{
-   background-image: url(/assets/images/background.jpg);
+   background-image: url(/assets/images/background\ image.jpg);
    background-attachment: fixed;
    background-repeat: no-repeat;
    max-width: 100%;
@@ -13,21 +13,20 @@
    background-size: cover;
 } 
 
+.AddInput{
+    resize: none;
+}
+
 #titleDiv{
     width: 800px;
     background-color: red;
     text-align: center;
     position: relative;
-}
-
-/* #firstTitle{
-    position: relative;
     top: 58px;
-    left: 400px;
-    display: inline;
-    color: black;
-} */
-
+    left: 380px;
+    border-radius: 5px;
+    background-color: #cac9f3;
+}
 
 .postDiv img{
     height: 470px;
@@ -41,10 +40,6 @@ h2{
     position: relative; 
     left: -90px;
     top: 132px;
-    opacity: 0.8;
-}
-
-#firstTitle:hover{
     opacity: 0.8;
 }
 
@@ -211,7 +206,8 @@ h2{
     font-size: 14px;
     border-radius: 6px;
     border: 1px solid grey;
-    padding-top: 6px; 
+    padding-top: 6px;
+    resize: none; 
 }
 
 .textArea:hover{
@@ -287,21 +283,4 @@ i:hover{
     cursor: pointer;
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

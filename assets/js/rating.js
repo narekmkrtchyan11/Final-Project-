@@ -18,9 +18,9 @@ function updateRating (post,id) {
         }else{
             arrowUp.style.color = "grey";
             arrowDown.style.color = "grey";
-        }
-    }
-}
+        };
+    };
+};
 
 for (const post of posts) {
     const id = post.getAttribute("id")
@@ -56,6 +56,6 @@ for (const post of posts) {
             bal.innerHTML = currentRating  + 1;
         }
         updateRating(post,id);
-    })
-}
+    });
+};
 
