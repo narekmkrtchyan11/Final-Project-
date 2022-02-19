@@ -18,15 +18,29 @@
 }
 
 #titleDiv{
-    width: 800px;
-    background-color: red;
+    width: 60%;
     text-align: center;
+
     position: relative;
     top: 58px;
     left: 380px;
     border-radius: 5px;
     background-color: #cac9f3;
 }
+
+    margin: 0 auto;
+    padding-top: 5rem;
+    
+
+}
+
+#firstTitle{
+    
+    color: black;
+    background-color: #cac9f3;
+} 
+
+
 
 .postDiv img{
     height: 470px;
