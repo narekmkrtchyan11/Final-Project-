@@ -1,23 +1,73 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-#main{
-   background-image: url(/assets/images/background\ image.jpg);
-   background-attachment: fixed;
-   background-repeat: no-repeat;
-   max-width: 100%;
-   height: auto;
-   background-position: 10% 0%;
-   background-size: cover;
-} 
+#main {
+    background-image: url(/assets/images/background\ image.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    height: auto;
+    background-position: 10% 0%;
+    background-size: cover;
+}
 
-.AddInput{
+span {
+    font-size: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px
+}
+
+#addNextPostDiv {
+    position: relative;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 180px;
+    border: 2px solid black;
+    text-align: center;
+    border-radius: 6px;
+    background-color: #cac9f3;
+}
+
+#potsImageAdress {
+    width: 250px;
+    margin: 5px;
+    height: 25px;
+    border-radius: 6px;
+
+}
+
+#actor {
+    width: 250px;
+    height: 25px;
+    margin: 5px;
+    border-radius: 6px;
+}
+
+#addPostButton {
+    width: 70px;
+    height: 30px;
+    margin: 5px;
+    border-radius: 6px;
+    background-color: #2196F3;
+    border: 1px solid grey;
+}
+
+#addPostButton:hover {
+    border: 1px solid rgb(91, 157, 243);
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.AddInput {
     resize: none;
 }
 
-#titleDiv{
+#titleDiv {
     width: 800px;
     background-color: red;
     text-align: center;
@@ -28,33 +78,33 @@
     background-color: #cac9f3;
 }
 
-.postDiv img{
+.postDiv img {
     height: 470px;
-    width: 420px;  
-    position: relative; 
-    left: 12%; 
+    width: 420px;
+    position: relative;
+    left: 12%;
     top: 8px;
 }
 
-h2{
-    position: relative; 
+h2 {
+    position: relative;
     left: -90px;
     top: 132px;
     opacity: 0.8;
 }
 
-.post{
+.post {
     display: flex;
-    flex-direction: column; 
-    align-items: center; 
+    flex-direction: column;
+    align-items: center;
 }
 
-.mainContainer{
+.mainContainer {
     margin-top: 10px;
     display: none;
 }
 
-.arrowDiv{
+.arrowDiv {
     position: relative;
     top: 150px;
     left: -244px;
@@ -62,14 +112,14 @@ h2{
     z-index: 2;
 }
 
-.bal{
+.bal {
     margin-left: 6px;
-    font-size: 20px; 
+    font-size: 20px;
     font-weight: 900;
     text-align: center;
 }
 
-.postDiv{
+.postDiv {
     height: 600px;
     width: 550px;
     border: 1px solid grey;
@@ -80,17 +130,17 @@ h2{
     background-color: #cac9f3;
 }
 
-.postDiv:hover{
+.postDiv:hover {
     border: 1px solid rgb(91, 157, 243);
 }
 
-.appearingDiv{
+.appearingDiv {
     position: relative;
     left: 332px;
     bottom: -44px;
 }
 
-.but{
+.but {
     height: 30px;
     width: 100px;
     border: 1px solid grey;
@@ -100,27 +150,27 @@ h2{
     background-color: #2196F3;
 }
 
-.but:hover{
+.but:hover {
     border: 1px solid rgb(91, 157, 243);
     cursor: pointer;
     opacity: 0.9;
 }
 
-.AddInput{
+.AddInput {
     width: 450px;
     padding-left: 12px;
     font-size: 14px;
     border-radius: 6px;
     border: 1px solid grey;
     padding-top: 6px;
-    height: 26px;  
+    height: 26px;
 }
 
-.AddInput:hover{
+.AddInput:hover {
     border: 1px solid rgb(91, 157, 243);
 }
 
-.AddButton{
+.AddButton {
     height: 34px;
     width: 90px;
     border-radius: 6px;
@@ -132,13 +182,13 @@ h2{
     top: -12px;
 }
 
-.AddButton:hover{
+.AddButton:hover {
     opacity: 0.8;
     border: 1px solid rgb(91, 157, 243);
     cursor: pointer;
 }
 
-.AddDiv{
+.AddDiv {
     min-height: 50px;
     width: 536px;
     margin: 6px 0;
@@ -155,7 +205,7 @@ h2{
     background-color: #cac9f3;
 }
 
-.replyButton{
+.replyButton {
     height: 26px;
     width: 60px;
     margin-bottom: 6px;
@@ -167,13 +217,13 @@ h2{
     background-color: #2196F3;
 }
 
-.replyButton:hover{
+.replyButton:hover {
     border: 1px solid rgb(91, 157, 243);
     opacity: 0.8;
     cursor: pointer;
 }
 
-.deleteButton{
+.deleteButton {
     height: 25px;
     width: 60px;
     border-radius: 6px;
@@ -186,13 +236,13 @@ h2{
     background-color: #2196F3;
 }
 
-.deleteButton:hover{
+.deleteButton:hover {
     border: 1px solid rgb(91, 157, 243);
     opacity: 0.8;
     cursor: pointer;
 }
 
-.replyDiv{
+.replyDiv {
     display: flex;
     justify-content: end;
     margin-top: -32px;
@@ -200,21 +250,21 @@ h2{
     margin-right: 4px;
 }
 
-.textArea{
+.textArea {
     height: 20px;
     padding-left: 12px;
     font-size: 14px;
     border-radius: 6px;
     border: 1px solid grey;
     padding-top: 6px;
-    resize: none; 
+    resize: none;
 }
 
-.textArea:hover{
+.textArea:hover {
     border: 1px solid rgb(91, 157, 243);
 }
 
- .addReplyCommentButton{ 
+.addReplyCommentButton {
     border-radius: 6px;
     color: white;
     font-size: 15px;
@@ -225,28 +275,13 @@ h2{
     background-color: #2196F3;
 }
 
-.addReplyCommentButton:hover{
-    border: 1px solid rgb(91, 157, 243);
-    opacity: 0.8;
-    cursor: pointer;
-} 
-
-.deleteReplyCommentButton{
-    border-radius: 6px;
-    color: white;
-    background-color: #2196F3;
-    font-size: 14px;
-    border: 1px solid grey;
-    margin-left: 4px;
-}
-
-.deleteReplyCommentButton:hover{
+.addReplyCommentButton:hover {
     border: 1px solid rgb(91, 157, 243);
     opacity: 0.8;
     cursor: pointer;
 }
 
-.replyCommentDiv{
+.replyCommentDiv {
     word-wrap: break-word;
     text-align: start;
     overflow: hidden;
@@ -257,30 +292,46 @@ h2{
     font-size: 14px;
     padding: 6px;
     margin-left: 338px;
-    margin-bottom: 6px; 
+    margin-bottom: 6px;
+    display: flex;
+    justify-content: space-between;
 }
 
-.replyCommentDiv:hover{
+.replyCommentDiv:hover {
     border: 1px solid rgb(91, 157, 243);
 }
 
-.AddDiv:hover{
+.AddDiv:hover {
     border: 1px solid rgb(91, 157, 243);
 }
 
-.h4{
+.h4 {
     margin-left: -10px;
     color: black;
     padding-top: 6px;
     font-family: 'Raleway', sans-serif;
 }
 
-i{
+i {
     color: grey;
 }
 
-i:hover{
+i:hover {
     cursor: pointer;
-
 }
 
+.deleteReplyButton {
+    border-radius: 6px;
+    color: white;
+    background-color: #2196F3;
+    border: 1px solid grey;
+    font-size: 14px;
+    width: 50px;
+    height: 28px;
+}
+
+.deleteReplyButton:hover {
+    border: 1px solid rgb(91, 157, 243);
+    opacity: 0.8;
+    cursor: pointer;
+}
