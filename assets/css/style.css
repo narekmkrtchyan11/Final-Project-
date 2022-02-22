@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Poppins', sans-serif;
 }
 
 #main{
@@ -13,17 +14,34 @@
    background-size: cover;
 } 
 
+header .navbar {
+    text-align: end;
+    padding: 70px 70px 0 0;
+}
+
+header .navbar a{
+    padding: 10px;
+    background-color: #cac9f3;
+    color: #000;
+    text-decoration: none;
+    font-size: larger;
+    border-radius: 5px;
+}
+
+header .navbar a:hover{
+    opacity: 0.9;
+}
+
 #titleDiv{
-    width: 60%;
+    width: 65%;
     text-align: center;
     margin: 0 auto;
     padding-top: 5rem;
     
-
 }
 
 #firstTitle{
-    
+    border-radius: 5px;
     color: black;
     background-color: #cac9f3;
 } 
@@ -40,7 +58,7 @@
 h2{
     position: relative; 
     left: -90px;
-    top: 132px;
+    top: 140px;
     opacity: 0.8;
 }
 
