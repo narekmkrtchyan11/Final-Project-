@@ -22,7 +22,7 @@ span {
 #addNextPostDiv {
     position: relative;
     top: 10px;
-    left: 10px;
+    left: 39%;
     display: flex;
     flex-direction: column;
     width: 300px;
@@ -73,9 +73,10 @@ span {
     text-align: center;
     position: relative;
     top: 58px;
-    left: 380px;
+    left: 23%; 
     border-radius: 5px;
     background-color: #cac9f3;
+    
 }
 
 .postDiv img {
