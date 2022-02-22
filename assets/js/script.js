@@ -17,7 +17,7 @@ let postArray = [
   {
     title: "Leonardo da Vinci",
     imgURL: "/assets/images/Monaliza.jpg",
-    like: "0",
+    like: "145",
   },
 ];
 setPost();
@@ -168,7 +168,6 @@ function renderPosts() {
           });
 
           addReplyCommentButton.addEventListener("click", function (evt) {
-            evt.stopPropagation();
             if (textArea.value !== "") {
               evt.preventDefault();
               const replyCommentDiv = document.createElement("div");
